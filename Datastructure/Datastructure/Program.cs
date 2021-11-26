@@ -9,22 +9,17 @@ namespace Datastructure
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter Progran number to get excuted \n1. Unordred list \n2. Ordered list \n3. Exit");
+                Console.WriteLine("Enter Program number to get executed \n1. Unordred list \n2. Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
                     case 1:
                         Unorderedlist unordered = new Unorderedlist();
                         unordered.Operation();
-                        break;
+                        break;        
                     case 2:
-                        Orderedlist ordered = new Orderedlist();
-                        ordered.Operation();
-                        break;
-                    case 3:
                         flag = false;
                         break;
-
                 }
             }
         }
