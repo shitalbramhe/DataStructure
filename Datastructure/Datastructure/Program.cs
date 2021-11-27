@@ -9,7 +9,7 @@ namespace Datastructure
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter Program number to get executed \n1. Unordred list \n2. Ordered list \n3. Exit");
+                Console.WriteLine("Enter Program number to get executed \n1. Unordred list \n2. Ordered list \n3. Simple Balanced Parentheses \n4. Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -22,6 +22,18 @@ namespace Datastructure
                         ordered.Operation();
                         break;
                     case 3:
+                        Simplebalanceparenthesis balance = new Simplebalanceparenthesis();
+                        bool result = balance.balanceparenthesis();
+                        if (result)
+                        {
+                            Console.WriteLine("Expression is balanced");
+                        }
+                        else
+                        {
+                            Console.WriteLine("Expression is not balanced");
+                        }
+                        break;
+                    case 4:
                         flag = false;
                         break;
                 }
