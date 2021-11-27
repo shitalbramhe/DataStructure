@@ -9,7 +9,7 @@ namespace Datastructure
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter Program number to get executed \n1. Unordred list \n2. Ordered list \n3. Simple Balanced Parentheses \n4. Exit");
+                Console.WriteLine("Enter Program number to get executed \n1. Unordred list \n2. Ordered list \n3. Simple Balanced Parentheses \n4. Banking cash counter\n5. Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -34,6 +34,10 @@ namespace Datastructure
                         }
                         break;
                     case 4:
+                        Bankingcashcounter counter = new Bankingcashcounter();
+                        counter.bank();
+                        break;
+                    case 5:
                         flag = false;
                         break;
                 }
